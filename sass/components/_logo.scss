@@ -1,0 +1,21 @@
+.logo {
+  &_light_theme {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-font-color);
+  margin-right: 93px;
+  animation-duration: 1000ms;
+}
+&_dark_theme {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--secondary-font-color);
+}
+&__accent-text {
+  color: var(--accent-color-link);
+}
+}

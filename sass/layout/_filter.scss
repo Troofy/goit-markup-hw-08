@@ -1,0 +1,12 @@
+.second-page-hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+&__item:not(:last-child) {
+  margin-right: 8px;
+}
+}
+
