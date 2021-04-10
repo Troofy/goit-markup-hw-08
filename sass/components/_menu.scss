@@ -1,8 +1,9 @@
+@media screen and (min-width: 768px) {
 .menu {
   display: flex;
   align-items: center;
-  &__item {
-    position: relative;
+ &__item {
+  position: relative;
     &:not(:last-child) {
       margin-right: 50px;
     }
@@ -43,11 +44,11 @@
     opacity: 1;
   }
 }
-
 .active {
   color: var(--accent-color-link);
   &::after {
     transform: scaleX(1);
     opacity: 1;
   }
+}
 }
