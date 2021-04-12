@@ -2,10 +2,19 @@
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 .footer-form {
   display: flex;
   margin-top: 20px;
+  @media (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 &__input {
   padding: 15px 16px;
   width: 358px;
@@ -31,6 +40,13 @@
 &:focus {
   outline: var(--accent-color-link);
   border: 1px solid var(--accent-color-link);
+}
+@media (max-width: 767px) {
+  width: 100%;
+  margin-right: 0px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  width: 450px;
 }
 }
 &__icon {

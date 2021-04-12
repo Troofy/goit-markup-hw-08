@@ -1,3 +1,50 @@
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
+  animation-duration: 1000ms;
+  &__accent-text {
+    color: var(--accent-color-link);
+  }
+  &_dark_theme {
+    color: var(--secondary-font-color);
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .logo_light_theme {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    &_light_theme {
+      font-size: 26px;
+      line-height: 1.19;
+      margin-right: 93px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // .logo {
 //   &_light_theme {
 //   font-family: var(--secondary-font);

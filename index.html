@@ -62,10 +62,10 @@
     </button>
     <ul class="mobile-menu__list list">
       <li class="mobile-menu__item">
-        <a href="" class="mobile-menu__link link active">Студия</a>
+        <a href="index.html" class="mobile-menu__link link active">Студия</a>
       </li>
       <li class="mobile-menu__item">
-        <a href="" class="mobile-menu__link link">Портфолио</a>
+        <a href="portfolio.html" class="mobile-menu__link link">Портфолио</a>
       </li>
       <li class="mobile-menu__item">
         <a href="" class="mobile-menu__link link">Контакты</a>
@@ -100,7 +100,7 @@
     </ul>
   </div>
   </header>
-  <!-- <main> -->
+<main>
     <!-- HERO -->
     <section class="hero">
       <div class="container">
@@ -109,7 +109,7 @@
   </div>
   </section>
 <!-- ADVANTAGES -->
-<!-- <section class="advantages">
+<section class="advantages">
   <h2 class="visually-hidden">Преимущества</h2>
   <div class="container">
   <ul class="advantages-list list">
@@ -151,9 +151,9 @@
     </li>
   </ul>
 </div>
-</section> -->
+</section>
     <!-- PORTFOLIO -->
-    <!-- <section class="portfolio">
+<section class="portfolio">
       <h2 class="section-title">Чем мы занимаемся</h2>
       <div class="container">
       <ul class="portfolio-list list">
@@ -177,14 +177,29 @@
         </li>
       </ul>
       </div>
-    </section> -->
+    </section>
     <!-- TEAM -->
-    <!-- <section class="team">
+    <section class="team">
       <h2 class="section-title">Наша команда</h2>
       <div class="container">
         <ul class="team-list list">
         <li class="team-list__item">
-          <img src="./images/team/Igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+          <div class="team-list__img">
+            <picture>
+              <source srcset="./images/team/desktop/igor-desktop-img.jpg    1x,
+                              ./images/team/desktop/igor-desktop-img@2x.jpg 2x"
+                              media="(min-width: 1200px)" />
+              <source srcset="
+                                ./images/team/tablet/igor-tablet-img.jpg    1x,
+                                ./images/team/tablet/igor-tablet-img@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+              <source srcset="
+                                ./images/team/mobile/igor-mobile-img.jpg    1x,
+                                ./images/team/mobile/igor-mobile-img@2x.jpg 2x"
+                                media="(min-width: 480px)" />
+          <img src="./images/team/mobile/igor-mobile-img.jpg" alt="photo Igor" />
+            </picture>
+          </div>
           <div class="team-card">
             <h3 class="team-card__name">Игорь Демьяненко</h3>
             <p class="team-card__post" lang="en">Product Designer</p>
@@ -221,7 +236,20 @@
             </ul>
         </div>
         <li class="team-list__item">
-            <img src="./images/team/Olga.jpg" alt="Ольга Репина" width="270" height="260">
+                    <div class="team-list__img">
+                      <picture>
+                        <source srcset="./images/team/desktop/olga-desktop-img.jpg 1x,
+                                        ./images/team/desktop/olga-desktop-img@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./images/team/tablet/olga-tablet-img.jpg 1x,
+                                        ./images/team/tablet/olga-tablet-img@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                        <source srcset="./images/team/mobile/olga-mobile-img.jpg 1x,
+                                        ./images/team/mobile/olga-mobile-img@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                        <img src="./images/team/mobile/olga-mobile-img.jpg" alt="photo olga" />
+                      </picture>
+                    </div>
             <div class="team-card">
             <h3 class="team-card__name">Ольга Репина</h3>
             <p class="team-card__post" lang="en">Frontend Developer</p>
@@ -258,9 +286,22 @@
               </a>
               </li>
             </ul>
-      </div>
-        <li class="team-list__item">
-            <img src="./images/team/Nikolay.jpg" alt="Николай Тарасов" width="270" height="260">
+</div>
+<li class="team-list__item">
+  <div class="team-list__img">
+    <picture>
+      <source srcset="./images/team/desktop/nikolay-desktop-img.jpg 1x,
+                      ./images/team/desktop/nikolay-desktop-img@2x.jpg 2x"
+                              media="(min-width: 1200px)" />
+              <source srcset="./images/team/tablet/nikolay-tablet-img.jpg 1x,
+                              ./images/team/tablet/nikolay-tablet-img@2x.jpg 2x"
+                              media="(min-width: 768px)" />
+              <source srcset="./images/team/mobile/nikolay-mobile-img.jpg 1x,
+                              ./images/team/mobile/nikolay-mobile-img@2x.jpg 2x"
+                              media="(min-width: 480px)" />
+              <img src="./images/team/mobile/nikolay-mobile-img.jpg" alt="photo nikolay" />
+            </picture>
+          </div>
             <div class="team-card">
             <h3 class="team-card__name">Николай Тарасов</h3>
             <p class="team-card__post" lang="en">Marketing</p>
@@ -301,7 +342,20 @@
           </div>
         </li>
         <li class="team-list__item">
-            <img  src="./images/team/Michail.jpg" alt="Михаил Ермаков" width="270" height="260">
+<div class="team-list__img">
+  <picture>
+    <source srcset="./images/team/desktop/mikhail-desktop-img.jpg    1x,
+                    ./images/team/desktop/mikhail-desktop-img@2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+    <source srcset="./images/team/tablet/mikhail-tablet-img.jpg    1x,
+                    ./images/team/tablet/mikhail-tablet-img@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+    <source srcset="./images/team/mobile/mikhail-mobile-img.jpg    1x,
+                    ./images/team/mobile/mikhail-mobile-img@2x.jpg 2x"
+                    media="(min-width: 480px)" />
+    <img src="./images/team/mobile/mikhail-mobile-img.jpg" alt="photo mikhail" />
+  </picture>
+</div>
             <div class="team-card">
             <h3 class="team-card__name">Михаил Ермаков</h3>
             <p class="team-card__post" lang="en">UI Designer</p>
@@ -343,11 +397,11 @@
         </li>
       </ul>
       </div>
-    </section> -->
+    </section>
     <!-- Клиенты -->
-    <!-- <section class="clients">
+<section class="clients">
       <div class="container">
-        <h2 class="section-title">Постоянные клиенты</h2>
+        <h2 class="section-title clients-title">Постоянные клиенты</h2>
 <ul class="clients-list list">
   <li class="clients-list__item">
     <a href="" class="clients-list__link link">
@@ -394,12 +448,13 @@
 </ul>
       </div>
     </section>
-  </main> -->
-  <!-- Футер -->
-  <!-- <footer class="footer">
-    <div class="container">
+</main>
+ <!-- Футер -->
+<footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-wrapper">
       <div class="footer-list-wrapper">
-    <a class="logo logo_dark_theme link" href="#"> <span class="logo__accent-text">Web</span>Studio</a>
+    <a class="logo logo_dark_theme link footer-logo" href="#"> <span class="logo__accent-text">Web</span>Studio</a>
     <address class="address">
       <ul class="footer-list list">
       <li class="footer-list__item" >
@@ -451,6 +506,7 @@
       </li>
     </ul>
     </div>
+    </div>
   <div class="footer-form-wrapper">
     <p class="footer-title">Подпишитесь на рассылку</p>
     <form action="#" class="footer-form">
@@ -464,9 +520,9 @@
     </form>
   </div>
 </div>
-</footer> -->
+</footer>
 <!-- Модальное окно -->
-  <!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>
         <svg class="modal__icon">
@@ -515,8 +571,8 @@
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
     </div>
-  </div> -->
-  <!-- <script src="./js/modal.js"></script> -->
+  </div>
+<script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

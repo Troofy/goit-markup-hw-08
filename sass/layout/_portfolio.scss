@@ -1,7 +1,13 @@
+@media screen and (max-width:1199px) {
+  .portfolio {
+    display: none;
+  }
+}
+
 .portfolio {
   padding-top: 47px;
   text-align: center;
-  padding-bottom: 149px;
+  padding-bottom: 94px;
 }
 .overlay-wrapper {
   position: relative;
