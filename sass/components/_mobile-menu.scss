@@ -53,10 +53,11 @@
     overflow-y: scroll;
     padding: 48px 40px;
     background-color: var(--secondary-font-color);
-    transform: translateY(-150%) translateX(-50%);
+    transform: translateY(-100%) translateX(-50%);
     transition: transform var(--main-animation);
     &__list {
-      margin-bottom: 302px;
+      margin-bottom: auto;
+    }
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -113,6 +114,7 @@
   }
   .mobile-social-list {
     display: flex;
+    flex-wrap: wrap;
     &__link {
       font-family: var(--main-font);
       font-weight: 500;
@@ -130,5 +132,4 @@
       padding-left: 10px;
     }
   }
-}
 }
