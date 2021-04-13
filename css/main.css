@@ -494,16 +494,18 @@ body {
     position: fixed;
     top: 0;
     left: 50%;
-    height: 100vh;
     width: 100vw;
-    max-width: 480px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 48px 40px;
     background-color: var(--secondary-font-color);
-    transform: translateY(-150%) translateX(-50%);
+    transform: translateY(-100%) translateX(-50%);
     transition: transform var(--main-animation);
   }
   .mobile-menu__list {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -558,6 +560,7 @@ body {
   }
   .mobile-social-list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-social-list__link {
     font-family: var(--main-font);
