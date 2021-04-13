@@ -490,6 +490,7 @@ body {
     height: 40px;
   }
   .mobile-menu {
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 50%;
