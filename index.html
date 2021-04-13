@@ -159,19 +159,34 @@
       <ul class="portfolio-list list">
         <li class="portfolio-list__item">
           <div class="overlay-wrapper">
-            <img src="./images/whatwedo/design.jpg" alt="десктопное приложение" width="370">
+            <picture>
+            <source srcset="./images/whatwedo/app-desktop-img.jpg 1x,
+                            ./images/whatwedo/app-desktop-img@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+            <img src="./images/whatwedo/app-desktop-img.jpg" alt="photo app" />
+          </picture>
             <p class="portfolio-list__overlay">Десктопные приложения</p>
         </div>
         </li>
         <li class="portfolio-list__item">
           <div class="overlay-wrapper">
-          <img src="./images/whatwedo/project.jpg" alt="мобильное приложение" width="370">
+          <picture>
+            <source srcset="./images/whatwedo/mobile-desktop-img.jpg 1x,
+                            ./images/whatwedo/mobile-desktop-img@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+            <img src="./images/whatwedo/mobile-desktop-img.jpg" alt="photo mobile app" />
+          </picture>
           <p class="portfolio-list__overlay">Мобильные приложения</p>
           </div>
         </li>
         <li class="portfolio-list__item">
           <div class="overlay-wrapper">
-          <img src="./images/whatwedo/draw.jpg" alt="дизайн" width="370">
+        <picture>
+          <source srcset="./images/whatwedo/design-desktop-img.jpg 1x,
+                          ./images/whatwedo/design-desktop-img@2x.jpg 2x" 
+                          media="(min-width: 1200px)" />
+          <img src="./images/whatwedo/design-desktop-img.jpg" alt="photo design" />
+        </picture>
           <p class="portfolio-list__overlay">Дизайнерские решения</p>
           </div>
         </li>
